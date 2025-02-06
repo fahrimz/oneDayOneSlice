@@ -6,6 +6,13 @@ The goal of this project is to enhance UI slicing skills using React Native. By 
 
 This project is bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
+### Disclaimer
+This project is for learning purposes only. All designs, trademarks, brands, and any other content shown in this project are not owned by the developer.
+
+## UI Result
+
+<img src="./results/day1.png" width="200" alt="Day 1" />
+
 ## Getting Started
 
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
@@ -53,3 +60,4 @@ For more information, please visit [CocoaPods Getting Started guide](https://gui
 ```sh
 # Using npm
 npm run ios
+```
