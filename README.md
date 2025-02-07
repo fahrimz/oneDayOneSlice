@@ -11,7 +11,7 @@ This project is for learning purposes only. All designs, trademarks, brands, and
 
 ## UI Result
 
-<img src="./results/day1.png" width="200" alt="Day 1" />
+Open the [results folder](./results) to see the UI result
 
 ## Getting Started
 

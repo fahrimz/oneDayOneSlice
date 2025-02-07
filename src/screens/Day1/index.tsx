@@ -34,7 +34,7 @@ const Day1 = () => {
             <Column gap={24}>
               <Column gap={8} flex={0}>
                 <Text color="white">19050</Text>
-                <Text color="white" fontSize={32} textTransform="uppercase">
+                <Text color="white" size={32} textTransform="uppercase">
                   {'leica q2\nmonochrom'}
                 </Text>
               </Column>

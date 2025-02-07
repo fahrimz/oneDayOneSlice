@@ -3,13 +3,27 @@ import {Text as TextDefault, TextStyle} from 'react-native';
 
 type TextProps = TextDefault['props'] & {
   color?: TextStyle['color'];
-  fontSize?: TextStyle['fontSize'];
+  size?: TextStyle['fontSize'];
+  weight?: TextStyle['fontWeight'];
   textTransform?: TextStyle['textTransform'];
 };
 
-const Text = ({color, fontSize, textTransform, style, ...props}: TextProps) => {
+const Text = ({
+  color,
+  size,
+  weight,
+  textTransform,
+  style,
+  ...props
+}: TextProps) => {
   return (
-    <TextDefault {...props} style={[style, {color, fontSize, textTransform}]} />
+    <TextDefault
+      {...props}
+      style={[
+        style,
+        {color, fontSize: size, textTransform, fontWeight: weight},
+      ]}
+    />
   );
 };
 
