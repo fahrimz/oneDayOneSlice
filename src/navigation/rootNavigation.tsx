@@ -14,7 +14,11 @@ export const RootNavigation = () => {
   return (
     <NavigationContainer ref={rootNavRef}>
       <Stack.Navigator
-        screenOptions={{headerShown: false}}
+        screenOptions={{
+          headerShown: false,
+          animationTypeForReplace: 'push',
+          animation: 'slide_from_bottom',
+        }}
         initialRouteName={RootPath.Home}>
         <Stack.Screen name={RootPath.Home} component={Home} />
         <Stack.Screen name={RootPath.Day1} component={Day1} />

@@ -4,6 +4,7 @@ import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {RootPath, useRootNavigation} from '../../navigation';
 import createStyles from './styles';
 import { MenuItem } from './types';
+import AntDesign from '@react-native-vector-icons/ant-design';
 
 const Home = () => {
   const navigation = useRootNavigation();
@@ -29,7 +30,7 @@ const Home = () => {
           <Pressable onPress={item.navigate} key={item.title}>
             <View style={styles.item}>
               <Text>{item.title}</Text>
-              <Text>{'>'}</Text>
+              <AntDesign name="arrow-right" size={14} color="black" />
             </View>
           </Pressable>
         )}
