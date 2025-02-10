@@ -7,6 +7,21 @@ fi
 
 name=$1
 
+# add new menu to Home screen
+FILE_PATH="src/screens/Home/index.tsx"
+
+# Check if file exists
+if [ ! -f "$FILE_PATH" ]; then
+    echo "Error: $FILE_PATH does not exist"
+    exit 1
+fi
+
+# Check if the menu item already exists
+if grep -q "title: '$name'" "$FILE_PATH"; then
+    echo "Error: Menu item '$name' already exists"
+    exit 0
+fi
+
 # create folder in screens
 mkdir -p ./src/screens/"$name"
 touch ./src/screens/"$name"/index.tsx
@@ -21,7 +36,6 @@ import $name from './$name';
 sed -i '' "s/export {/& $name, /" ./src/screens/index.ts
 
 # add content to screen
-
 echo "import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
@@ -49,33 +63,16 @@ sed -i '' "/export type RootStackList = {/a\\
   $name: undefined;
 " ./src/navigation/paths.ts
 
-# add to root navigation
-sed -i '' "/import {.*} from '..\/screens';/a\\
-import $name from '../screens/$name';
-" ./src/navigation/rootNavigation.tsx
+# Update navigation imports - add to existing import from '../screens' only
+sed -i '' "/import {.*} from '..\/screens';/ s/} from/ ,$name} from/" ./src/navigation/rootNavigation.tsx
 
-sed -i '' "/<Stack.Screen name={RootPath.Day2} component={Day2} \/>/a\\
-  <Stack.Screen name={RootPath.$name} component={$name} />
-" ./src/navigation/rootNavigation.tsx
-
-# add new menu to Home screen
-FILE_PATH="src/screens/Home/index.tsx"
-
-# Check if file exists
-if [ ! -f "$FILE_PATH" ]; then
-    echo "Error: $FILE_PATH does not exist"
-    exit 1
-fi
-
-# Check if the menu item already exists
-if grep -q "title: '$name'" "$FILE_PATH"; then
-    echo "Error: Menu item '$name' already exists"
-    exit 1
-fi
+# add to Stack.Navigator
+sed -i '' "/<Stack.Navigator/,/<\/Stack.Navigator>/s/<\/Stack.Navigator>/  <Stack.Screen name={RootPath.$name} component={$name} \/>\n      <\/Stack.Navigator>/" ./src/navigation/rootNavigation.tsx
 
 # Create temporary file
 TMP_FILE=$(mktemp)
 
+# Process the file and add new menu item
 awk -v screen="$name" '
     # Print line by line until we find the menu array
     /const menu: MenuItem\[\] = \[/ {
@@ -107,7 +104,7 @@ if [ $? -eq 0 ]; then
     # Replace original file with modified content
     mv "$TMP_FILE" "$FILE_PATH"
     
-    echo "Successfully added $SCREEN_NAME to menu items"
+    echo "Successfully added $name to menu items"
     echo "Backup created at ${FILE_PATH}.bak"
 else
     echo "Error: Failed to modify file"
