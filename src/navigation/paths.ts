@@ -2,6 +2,7 @@ import {NavigationProp, useNavigation} from '@react-navigation/native';
 import {createPaths} from './helper';
 
 export type RootStackList = {
+  Day3: undefined;
   Home: undefined;
   Day1: undefined;
   Day2: undefined;
