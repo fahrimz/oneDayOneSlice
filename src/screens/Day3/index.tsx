@@ -14,7 +14,7 @@ const Day3 = () => {
   const [circularValue, setCircularValue] = React.useState(16);
 
   const {width} = useWindowDimensions();
-  const sliderSize = width * 0.5;
+  const sliderSize = width * 0.6;
   const [powerState, setPowerState] = useState<boolean>(true);
 
   const rippleScaleX = useRef(new Animated.Value(0)).current;
