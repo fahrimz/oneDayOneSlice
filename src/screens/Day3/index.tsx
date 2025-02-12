@@ -67,27 +67,9 @@ const Day3 = () => {
 
       <Gap height={16} />
 
-      <Animated.View style={[styles.card, {flex: 1, overflow: 'hidden'}]}>
-        <View
-          style={{
-            position: 'absolute',
-            left: 0,
-            right: 0,
-            bottom: 0,
-            alignItems: 'center',
-          }}>
-          <Animated.View
-            style={[
-              {
-                width: 200,
-                height: 100,
-                borderRadius: 100,
-                position: 'absolute',
-                bottom: 0,
-              },
-              rippleTransform,
-            ]}
-          />
+      <Animated.View style={[styles.card, styles.mainCard]}>
+        <View style={styles.overlay}>
+          <Animated.View style={[styles.ripple, rippleTransform]} />
         </View>
 
         <Column flex={1}>

@@ -57,4 +57,19 @@ export default StyleSheet.create({
     width: '30%',
     borderRadius: 24,
   },
+  mainCard: {flex: 1, overflow: 'hidden'},
+  overlay: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    bottom: 0,
+    alignItems: 'center',
+  },
+  ripple: {
+    width: 200,
+    height: 100,
+    borderRadius: 100,
+    position: 'absolute',
+    bottom: 0,
+  },
 });
