@@ -21,7 +21,7 @@ const Menu = () => {
     // stop all animation to make sure new animation can run
     isAnimating.stopAnimation();
     animatedIndex.stopAnimation();
-    animatedBackgrounds.forEach(animation => animation.stopAnimation())
+    animatedBackgrounds.forEach(animation => animation.stopAnimation());
 
     isAnimating.setValue(1);
 

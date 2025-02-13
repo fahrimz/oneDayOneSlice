@@ -24,6 +24,10 @@ const Home = () => {
         title: 'Day3',
         navigate: () => navigation.navigate(RootPath.Day3),
       },
+      {
+        title: 'Day4',
+        navigate: () => navigation.navigate(RootPath.Day4),
+      },
   ];
 
   return (
