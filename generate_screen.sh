@@ -111,3 +111,8 @@ else
     rm "$TMP_FILE"
     exit 1
 fi
+
+# Check if package.json contains "lint" script
+if grep -q '"lint"' package.json; then
+  npm run lint -- --fix
+fi
