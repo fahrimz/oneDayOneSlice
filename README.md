@@ -1,5 +1,14 @@
 # oneDayOneSlice
 
+<p align="middle">
+  <img src="./results/day1.png" width="16%" alt="Day 1" />
+  <img src="./results/day2.gif" width="16%" alt="Day 2" />
+  <img src="./results/day4.gif" width="16%" alt="Day 4" />
+  <img src="./results/day3_1.gif" width="16%" alt="Day 3 part 1" />
+  <img src="./results/day3_2.gif" width="16%" alt="Day 3 part 2" />
+  <img src="./results/day3_3.gif" width="16%" alt="Day 3 part 3" />
+</p>
+
 ## Project Description
 
 The goal of this project is to enhance UI slicing skills using React Native. By working on this project, the aim is to improve the ability to convert design mockups into functional and visually appealing user interfaces in a React Native environment.
@@ -8,10 +17,6 @@ This project is bootstrapped using [`@react-native-community/cli`](https://githu
 
 ### Disclaimer
 This project is for learning purposes only. All designs, trademarks, brands, and any other content shown in this project are not owned by the developer.
-
-## UI Result
-
-Open the [results folder](./results) to see the UI result
 
 ## Getting Started
 
