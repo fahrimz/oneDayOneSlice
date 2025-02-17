@@ -10,4 +10,5 @@ export type ContainerProps = {
   paddingVertical?: number;
   paddingHorizontal?: number;
   gap?: number;
+  animated?: boolean;
 };
