@@ -1,0 +1,17 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/AntDesign.ttf",
+      "sha1": "37d79a06c762b7298d714063802ad45e65e3987a"
+    },
+    {
+      "path": "assets/fonts/Anton-Regular.ttf",
+      "sha1": "49243712633711db3b673d0b03536e0180cd7ddb"
+    },
+    {
+      "path": "assets/fonts/MaterialIcons.ttf",
+      "sha1": "7e02c3f005532ff4d24148567c84089756a7848a"
+    }
+  ]
+}

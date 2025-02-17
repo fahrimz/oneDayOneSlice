@@ -3,18 +3,22 @@ import {Animated, Text as TextDefault, TextStyle} from 'react-native';
 
 type TextProps = TextDefault['props'] & {
   color?: TextStyle['color'];
+  family?: TextStyle['fontFamily'];
   size?: TextStyle['fontSize'];
   weight?: TextStyle['fontWeight'];
   textTransform?: TextStyle['textTransform'];
   animated?: boolean;
+  align?: TextStyle['textAlign'];
 };
 
 export const Text = ({
   color,
+  family,
   size,
   weight,
   textTransform,
   style,
+  align,
   ...props
 }: TextProps) => {
   return (
@@ -23,10 +27,12 @@ export const Text = ({
       style={[
         style,
         {
+          fontFamily: family,
           fontSize: size,
           textTransform,
           fontWeight: weight,
           color,
+          textAlign: align,
         },
       ]}
     />
@@ -39,10 +45,12 @@ type AnimatedTextProps = Omit<TextProps, 'color'> & {
 
 export const AnimatedText = ({
   color,
+  family,
   size,
   weight,
   textTransform,
   style,
+  align,
   ...props
 }: AnimatedTextProps) => {
   return (
@@ -51,10 +59,12 @@ export const AnimatedText = ({
       style={[
         style,
         {
+          fontFamily: family,
           fontSize: size,
           textTransform,
           fontWeight: weight,
           color,
+          textAlign: align,
         },
       ]}
     />

@@ -8,26 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-oneDayOneSlice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-oneDayOneSlice.a */; };
-		113A70292D550C4000F484DB /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 113A70282D550C4000F484DB /* AntDesign.ttf */; };
-		116780A32D5A445E00554910 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 116780A22D5A445E00554910 /* MaterialIcons.ttf */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		157675BAB8CD4BAF8BF4861F /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6EE6994F1684E588232FE7F /* AntDesign.ttf */; };
+		16F11230F6EB41C586CC8A0C /* Anton-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6FEE6E28F184EA7A22AF342 /* Anton-Regular.ttf */; };
 		3BF1933D14A6B9BA3B8E9BAE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		F872322B0E194DFDBA4140CB /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59AAB97348824617A9C554D1 /* MaterialIcons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		113A70282D550C4000F484DB /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AntDesign.ttf; path = "../node_modules/@react-native-vector-icons/ant-design/fonts/AntDesign.ttf"; sourceTree = "<group>"; };
-		116780A22D5A445E00554910 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../node_modules/@react-native-vector-icons/material-icons/fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* oneDayOneSlice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oneDayOneSlice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = oneDayOneSlice/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = oneDayOneSlice/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = oneDayOneSlice/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-oneDayOneSlice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oneDayOneSlice.debug.xcconfig"; path = "Target Support Files/Pods-oneDayOneSlice/Pods-oneDayOneSlice.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-oneDayOneSlice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oneDayOneSlice.release.xcconfig"; path = "Target Support Files/Pods-oneDayOneSlice/Pods-oneDayOneSlice.release.xcconfig"; sourceTree = "<group>"; };
+		59AAB97348824617A9C554D1 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = ../assets/fonts/MaterialIcons.ttf; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-oneDayOneSlice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-oneDayOneSlice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = oneDayOneSlice/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = oneDayOneSlice/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6EE6994F1684E588232FE7F /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = ../assets/fonts/AntDesign.ttf; sourceTree = "<group>"; };
+		E6FEE6E28F184EA7A22AF342 /* Anton-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Anton-Regular.ttf"; path = "../assets/fonts/Anton-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -43,19 +45,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		113A70272D550C0400F484DB /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				116780A22D5A445E00554910 /* MaterialIcons.ttf */,
-				113A70282D550C4000F484DB /* AntDesign.ttf */,
-			);
-			name = Fonts;
-			sourceTree = "<group>";
-		};
 		13B07FAE1A68108700A75B9A /* oneDayOneSlice */ = {
 			isa = PBXGroup;
 			children = (
-				113A70272D550C0400F484DB /* Fonts */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -74,6 +66,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3F99A22813EA4C428B440243 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6FEE6E28F184EA7A22AF342 /* Anton-Regular.ttf */,
+				B6EE6994F1684E588232FE7F /* AntDesign.ttf */,
+				59AAB97348824617A9C554D1 /* MaterialIcons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +91,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				3F99A22813EA4C428B440243 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -174,9 +177,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				116780A32D5A445E00554910 /* MaterialIcons.ttf in Resources */,
-				113A70292D550C4000F484DB /* AntDesign.ttf in Resources */,
 				3BF1933D14A6B9BA3B8E9BAE /* PrivacyInfo.xcprivacy in Resources */,
+				16F11230F6EB41C586CC8A0C /* Anton-Regular.ttf in Resources */,
+				157675BAB8CD4BAF8BF4861F /* AntDesign.ttf in Resources */,
+				F872322B0E194DFDBA4140CB /* MaterialIcons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,10 +398,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -466,10 +467,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

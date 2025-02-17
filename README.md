@@ -1,12 +1,13 @@
 # oneDayOneSlice
 
-<p align="middle">
+<p>
   <img src="./results/day1.png" width="16%" alt="Day 1" />
   <img src="./results/day2.gif" width="16%" alt="Day 2" />
   <img src="./results/day4.gif" width="16%" alt="Day 4" />
   <img src="./results/day3_1.gif" width="16%" alt="Day 3 part 1" />
   <img src="./results/day3_2.gif" width="16%" alt="Day 3 part 2" />
   <img src="./results/day3_3.gif" width="16%" alt="Day 3 part 3" />
+  <img src="./results/day5.gif" width="16%" alt="Day 5" />
 </p>
 
 ## Project Description
